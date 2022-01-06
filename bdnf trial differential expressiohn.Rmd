@@ -11,13 +11,13 @@ library('data.table')
 this let's you access the 'create_feature_count_table' function gifted by AL :)
 
 ```{r}
-source(here::here('create_feature_count_table.R'))
+source(here::here("scripts",'create_feature_count_table.R'))
 ```
 
 this organizes all the data from the many .bam files and creates one data frame you can work with
 
 ```{r}
-featureCounts <- create_feature_count_table("C:/Users/mlomb/OneDrive/Desktop/MRes project/Differential Expression/data/bdnf_trial_full/bdnf_trial_full")
+featureCounts <- create_feature_count_table("/Users/matteozanovello/Documents/phd/splicing_chx/data")
 ```
 
 this lets you access the 'make_deseq_dfs.R'
